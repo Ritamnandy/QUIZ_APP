@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ_APP</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="app">
+        <div class="start-screen">
+            <h1 id="h1">QUIZ APP</h1>
+            <label for="number-of-question">Number of  Question :</label>
+            <select id="number-of-question" name=" ">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            </select>
+
+            <label for="Choose-Difficulty">Choose Difficulty :</label>
+            <select id="Choose-Difficulty" name=" ">
+            <option value="">Any Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+
+            </select>
+
+            <label for="Select-Category">Select Category: </label>
+            <select id="Select-Category" name=" ">
+            <option value="">Any Category</option>
+            <option value="9">General Knowledge</option>
+            <option value="10">Books</option>
+            <option value="11">Film</option>
+            <option value="17">Science & Nature</option>
+            <option value="18">Computers</option>
+            <option value="19">Mathematics</option>
+            <option value="21">Sports</option>
+            <option value="22">Geography</option>
+            <option value="23">History</option>
+            <option value="27">Animals</option>
+            <option value="24">Politics</option>
+            </select>
+
+            <label>Question Type:</label>
+            <select id="type">
+            <option value="">Any Type</option>
+            <option value="multiple">Multiple Choice</option>
+            <option value="boolean">True / False</option>
+            </select>
+
+
+            <button class="start-btn">Start</button>
+        </div>
+        <div class="quiz-question">
+            <div class="number">
+                <div> Question: <span class="current">1</span><span class="total">/10</span></div>
+                <div class="scorer">Score: <span class="score">0</span></div>
+            </div>
+             <div class="question">This is a Question </div>
+             <div class="answer">  
+             </div>
+             <div id="timer">Time: 15s</div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <button class="Next-btn">Next</button>
+        </div>
+        <div class="end-screen">
+            <div class="result"> 🎉 Quiz end!  </div>
+            <div class="your-score"></div>
+            <div class="end">
+                <button class="play-again">🔄 Play Again</button>
+                <button class="exit"> Exit</button>
+            </div>
+        </div>
+    </div>   
+</body>
+<script src="quiz.js"></script>
+</html>
